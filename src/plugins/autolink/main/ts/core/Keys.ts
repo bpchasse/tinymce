@@ -150,7 +150,7 @@ const parseCurrentLine = function (editor, endOffset, delimiter) {
 
   if (matches) {
     if (matches[1] === 'www.') {
-      matches[1] = 'http://www.';
+      matches[1] = 'https://www.';
     } else if (/@$/.test(matches[1]) && !/^mailto:/.test(matches[1])) {
       matches[1] = 'mailto:' + matches[1];
     }
